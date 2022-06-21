@@ -1,0 +1,6 @@
+site_name: Liebhaberei.eu
+site_url: https://liebhaberei.eu/
+theme: readthedocs
+repo_url: https://github.com/liebhaberei
+site_description: Über Petrinetze, Prozesse und Rezepte.
+site_dir: ../docs
