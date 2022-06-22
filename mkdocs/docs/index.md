@@ -1,5 +1,5 @@
-# Petrinetze
+# Hier gehts los?
 
-Über Petrinetze, Prozesse und Rezepte.
+Mal sehen was passiert.
 
 

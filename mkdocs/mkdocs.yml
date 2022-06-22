@@ -2,6 +2,6 @@ site_name: Liebhaberei.eu
 site_url: https://liebhaberei.eu/
 theme: readthedocs
 repo_url: https://github.com/liebhaberei/liebhaberei.github.io
-site_description: Über Petrinetze, Prozesse und Rezepte.
+site_description: Alles was so anfällt
 site_dir: ../docs
 edit_uri: blob/main/mkdocs/docs/
