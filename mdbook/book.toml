@@ -1,0 +1,19 @@
+[book]
+authors = ["Tom"]
+language = "de"
+multilingual = false
+src = "src"
+title = "Liebhaberei"
+description = "Mein Notizbuch für Freizeit-Projekte."
+
+[build]
+build-dir = "../docs"
+
+[output.html]
+mathjax-support = true
+default-theme = "coal"
+preferred-dark-theme = "coal"
+git-repository-url = "https://github.com/liebhaberei/liebhaberei.github.io"
+git-repository-icon = "fa-github"
+edit-url-template = "https://github.com/liebhaberei/liebhaberei.github.io/blob/main/mdbook/{path}"
+cname = "liebhaberei.eu"
