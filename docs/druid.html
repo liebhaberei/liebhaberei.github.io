@@ -83,7 +83,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded affix "><a href="liebhaberei.html">Liebhaberei</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><a href="druid.html" class="active">Druid UI</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><a href="kontakt.html">Kontakt</a></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="liebhaberei.html">Liebhaberei</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><a href="rust.html">Rust</a></li><li class="chapter-item expanded affix "><a href="diesel.html">Diesel</a></li><li class="chapter-item expanded affix "><a href="rust_ui.html">Rust UI</a></li><li class="chapter-item expanded affix "><a href="druid.html" class="active">Druid UI</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><a href="betriebssysteme.html">Betriebssysteme</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><a href="embedded.html">Embedded</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><a href="kontakt.html">Kontakt</a></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -171,11 +171,11 @@
 
                     <nav class="nav-wrapper" aria-label="Page navigation">
                         <!-- Mobile navigation buttons -->
-                            <a rel="prev" href="liebhaberei.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                            <a rel="prev" href="rust_ui.html" class="mobile-nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                                 <i class="fa fa-angle-left"></i>
                             </a>
 
-                            <a rel="next" href="kontakt.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                            <a rel="next" href="betriebssysteme.html" class="mobile-nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                                 <i class="fa fa-angle-right"></i>
                             </a>
 
@@ -185,17 +185,33 @@
             </div>
 
             <nav class="nav-wide-wrapper" aria-label="Page navigation">
-                    <a rel="prev" href="liebhaberei.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
+                    <a rel="prev" href="rust_ui.html" class="nav-chapters previous" title="Previous chapter" aria-label="Previous chapter" aria-keyshortcuts="Left">
                         <i class="fa fa-angle-left"></i>
                     </a>
 
-                    <a rel="next" href="kontakt.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
+                    <a rel="next" href="betriebssysteme.html" class="nav-chapters next" title="Next chapter" aria-label="Next chapter" aria-keyshortcuts="Right">
                         <i class="fa fa-angle-right"></i>
                     </a>
             </nav>
 
         </div>
 
+        <!-- Livereload script (if served using the cli tool) -->
+        <script type="text/javascript">
+            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
+            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
+            const socket = new WebSocket(wsAddress);
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
 
 
 
