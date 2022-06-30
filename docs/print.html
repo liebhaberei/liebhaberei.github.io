@@ -84,7 +84,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded affix "><a href="liebhaberei.html">Liebhaberei</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><a href="rust.html">Rust</a></li><li class="chapter-item expanded affix "><a href="diesel.html">Diesel</a></li><li class="chapter-item expanded affix "><a href="rust_ui.html">Rust UI</a></li><li class="chapter-item expanded affix "><a href="druid.html">Druid UI</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><a href="betriebssysteme.html">Betriebssysteme</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><a href="embedded.html">Embedded</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><a href="kontakt.html">Kontakt</a></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="liebhaberei.html">Liebhaberei</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><a href="rust.html">Rust</a></li><li class="chapter-item expanded affix "><a href="rust_ui.html">Rust UI</a></li><li class="chapter-item expanded affix "><a href="druid.html">Druid UI</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><a href="betriebssysteme.html">Betriebssysteme</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><a href="embedded.html">Embedded</a></li><li class="spacer"></li><li class="chapter-item expanded affix "><a href="kontakt.html">Kontakt</a></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -156,7 +156,6 @@
 <li><a href="https://doc.rust-lang.org/book/title-page.html">Rust Buch</a></li>
 <li><a href="https://rust-lang-nursery.github.io/rust-cookbook/intro.html">Rust Kochbuch</a></li>
 </ul>
-<div style="break-before: page; page-break-before: always;"></div><h1 id="diesel-und-sqlite"><a class="header" href="#diesel-und-sqlite">Diesel und SQLite</a></h1>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="rust-uis"><a class="header" href="#rust-uis">Rust UIs</a></h1>
 <h2 id="druid"><a class="header" href="#druid">Druid</a></h2>
 <ul>
@@ -247,22 +246,6 @@
 
         </div>
 
-        <!-- Livereload script (if served using the cli tool) -->
-        <script type="text/javascript">
-            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
-            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
-            const socket = new WebSocket(wsAddress);
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
 
 
 
