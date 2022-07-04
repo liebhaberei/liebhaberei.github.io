@@ -7,7 +7,15 @@
 
 ## Redox OS
 
-- [Redox OS](https://doc.redox-os.org/book/)
+- [Redox OS Book](https://doc.redox-os.org/book/)
+
+Redox OS ist ein in Rust geschriebenes Betriebssystem, das auf einen Microkernel setzt.
+
+### Stand 2022-07-04: 
+
+Die Entwicklung von Redox OS ist noch in einem frühen Stadium.
+Es ist möglich das System von einem ISO Image oder mit QEMU zu booten.
+Da es noch keine Dateisystemtreiber gibt muss das vollständige Root-Dateisystem in den RAM passen.
 
 ## FreeRTOS
 
