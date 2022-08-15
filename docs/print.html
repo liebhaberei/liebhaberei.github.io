@@ -446,6 +446,42 @@ void loop() {
 <ul>
 <li><a href="https://www.mikrocontroller.net/articles/Interrupt">Mikrocontroller - Interrupt</a></li>
 </ul>
+<h1 id="arduino-uno-using-avr-gcc"><a class="header" href="#arduino-uno-using-avr-gcc">Arduino Uno using AVR GCC</a></h1>
+<ul>
+<li><a href="https://de.wikibooks.org/wiki/C-Programmierung_mit_AVR-GCC/_Makefile">Makefile for Arduino UNO</a></li>
+</ul>
+<h1 id="avr-microcontroller"><a class="header" href="#avr-microcontroller">AVR Microcontroller</a></h1>
+<h2 id="learn-the-basics-of-io-pins-for-an-avr-microcontroller"><a class="header" href="#learn-the-basics-of-io-pins-for-an-avr-microcontroller">Learn the Basics of I/O Pins for an AVR Microcontroller</a></h2>
+<ul>
+<li><a href="https://maker.pro/custom/tutorial/learn-the-basics-of-io-pins-for-an-avr-microcontroller">Learn the Basics of I/O Pins for an AVR Microcontroller</a></li>
+</ul>
+<h3 id="data-direction-register-ddr"><a class="header" href="#data-direction-register-ddr">Data Direction Register (DDR)</a></h3>
+<ul>
+<li>8-bit register that defines if a pin is input or output</li>
+<li>1 is output, 0 is input
+<ul>
+<li>Example: Port B all output: <code>DDRB = 0xFF</code> (<code>DDRB = 0b11111111</code>)</li>
+</ul>
+</li>
+</ul>
+<h3 id="pinx-register"><a class="header" href="#pinx-register">PINx Register</a></h3>
+<ul>
+<li>read digital values from pins configured as input</li>
+</ul>
+<h3 id="portx-register"><a class="header" href="#portx-register">PORTx Register</a></h3>
+<ul>
+<li>set digital values for output pins</li>
+</ul>
+<h2 id="avr-gcc-tutorial"><a class="header" href="#avr-gcc-tutorial">AVR GCC tutorial</a></h2>
+<ul>
+<li><a href="https://www.mikrocontroller.net/articles/AVR-GCC-Tutorial">AVR-GCC-Tutorial</a></li>
+</ul>
+<h2 id="avr-pwm"><a class="header" href="#avr-pwm">AVR PWM</a></h2>
+<ul>
+<li><a href="https://www.mikrocontroller.net/articles/AVR_PWM">Mikrocontroller AVR PWM</a></li>
+<li><a href="https://www.mikrocontroller.net/articles/AVR-Tutorial:_PWM">Mikrocontroller AVR PWM Tutorial</a></li>
+<li><a href="https://extremeelectronics.co.in/avr-tutorials/pwm-signal-generation-by-using-avr-timers-part-ii/">PWM Signal Generation by Using AVR Timers. Part II</a></li>
+</ul>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="web--servers"><a class="header" href="#web--servers">Web &amp; Servers</a></h1>
 <h2 id="projekte-2"><a class="header" href="#projekte-2">Projekte</a></h2>
 <ul>
@@ -485,22 +521,6 @@ void loop() {
 
         </div>
 
-        <!-- Livereload script (if served using the cli tool) -->
-        <script type="text/javascript">
-            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
-            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
-            const socket = new WebSocket(wsAddress);
-            socket.onmessage = function (event) {
-                if (event.data === "reload") {
-                    socket.close();
-                    location.reload();
-                }
-            };
-
-            window.onbeforeunload = function() {
-                socket.close();
-            }
-        </script>
 
 
 
