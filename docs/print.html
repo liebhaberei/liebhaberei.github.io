@@ -84,7 +84,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded affix "><a href="liebhaberei.html">Liebhaberei</a></li><li class="spacer"></li><li class="chapter-item expanded "><a href="rust.html"><strong aria-hidden="true">1.</strong> Rust</a></li><li class="spacer"></li><li class="chapter-item expanded "><a href="betriebssysteme.html"><strong aria-hidden="true">2.</strong> Betriebssysteme</a></li><li class="spacer"></li><li class="chapter-item expanded "><a href="embedded.html"><strong aria-hidden="true">3.</strong> Embedded</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="PikaBot.html"><strong aria-hidden="true">3.1.</strong> PikaBot</a></li><li class="chapter-item expanded "><a href="pikabot_rust.html"><strong aria-hidden="true">3.2.</strong> PikaBot Rust</a></li><li class="chapter-item expanded "><a href="arduino.html"><strong aria-hidden="true">3.3.</strong> Arduino</a></li><li class="chapter-item expanded "><a href="embedded_c.html"><strong aria-hidden="true">3.4.</strong> Embedded C</a></li><li class="spacer"></li></ol></li><li class="chapter-item expanded "><a href="web.html"><strong aria-hidden="true">4.</strong> Web & Servers</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ansible.html"><strong aria-hidden="true">4.1.</strong> Ansible</a></li><li class="chapter-item expanded "><a href="django.html"><strong aria-hidden="true">4.2.</strong> Django</a></li><li class="spacer"></li></ol></li><li class="chapter-item expanded "><a href="kontakt.html">Kontakt</a></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded affix "><a href="liebhaberei.html">Liebhaberei</a></li><li class="spacer"></li><li class="chapter-item expanded "><a href="rust.html"><strong aria-hidden="true">1.</strong> Rust</a></li><li class="spacer"></li><li class="chapter-item expanded "><a href="betriebssysteme.html"><strong aria-hidden="true">2.</strong> Betriebssysteme</a></li><li class="spacer"></li><li class="chapter-item expanded "><a href="embedded.html"><strong aria-hidden="true">3.</strong> Embedded</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="PikaBot.html"><strong aria-hidden="true">3.1.</strong> PikaBot</a></li><li class="chapter-item expanded "><a href="pikabot_rust.html"><strong aria-hidden="true">3.2.</strong> PikaBot Rust</a></li><li class="chapter-item expanded "><a href="arduino.html"><strong aria-hidden="true">3.3.</strong> Arduino</a></li><li class="chapter-item expanded "><a href="embedded_c.html"><strong aria-hidden="true">3.4.</strong> Embedded C</a></li><li class="spacer"></li></ol></li><li class="chapter-item expanded "><a href="web.html"><strong aria-hidden="true">4.</strong> Web & Servers</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="ansible.html"><strong aria-hidden="true">4.1.</strong> Ansible</a></li><li class="chapter-item expanded "><a href="django.html"><strong aria-hidden="true">4.2.</strong> Django</a></li><li class="spacer"></li></ol></li><li class="chapter-item expanded "><a href="hardware.html"><strong aria-hidden="true">5.</strong> Hardware</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="lampe.html"><strong aria-hidden="true">5.1.</strong> Die Lampe</a></li><li class="chapter-item expanded "><a href="pixelwall.html"><strong aria-hidden="true">5.2.</strong> Pixelwall</a></li><li class="spacer"></li></ol></li><li class="chapter-item expanded "><a href="kontakt.html">Kontakt</a></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
         </nav>
@@ -454,6 +454,14 @@ void loop() {
 </ul>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="ansible"><a class="header" href="#ansible">Ansible</a></h1>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="django"><a class="header" href="#django">Django</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="hardware"><a class="header" href="#hardware">Hardware</a></h1>
+<h2 id="projekte-3"><a class="header" href="#projekte-3">Projekte</a></h2>
+<ul>
+<li><a href="lampe.html">Die Lampe</a></li>
+<li><a href="pixelwall.html">Pixelwall</a></li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="die-lampe"><a class="header" href="#die-lampe">Die Lampe</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="pixelwall"><a class="header" href="#pixelwall">Pixelwall</a></h1>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="kontakt"><a class="header" href="#kontakt">Kontakt</a></h1>
 <ul>
 <li><a href="https://github.com/liebhaberei">Github</a></li>
@@ -477,6 +485,22 @@ void loop() {
 
         </div>
 
+        <!-- Livereload script (if served using the cli tool) -->
+        <script type="text/javascript">
+            const wsProtocol = location.protocol === 'https:' ? 'wss:' : 'ws:';
+            const wsAddress = wsProtocol + "//" + location.host + "/" + "__livereload";
+            const socket = new WebSocket(wsAddress);
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
 
 
 

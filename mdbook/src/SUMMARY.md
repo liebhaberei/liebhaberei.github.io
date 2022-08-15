@@ -26,4 +26,10 @@
 
 --------
 
+- [Hardware](hardware.md)
+  - [Die Lampe](lampe.md)
+  - [Pixelwall](pixelwall.md)
+
+--------
+
 [Kontakt](kontakt.md)
