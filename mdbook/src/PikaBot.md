@@ -10,6 +10,10 @@
 ![Cytron Maker Uno](Maker_Uno.png)
 ![Arduino UNO pinout](arduino_schematics_pins.jpg)
 
+## Git
+
+- [Git Repo](https://github.com/liebhaberei/PikaBotBook)
+
 ## Prepare Arduino IDE
 - Install Cytron Motor Drivers Library
 
